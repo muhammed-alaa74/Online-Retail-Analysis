@@ -75,18 +75,28 @@ Raw Data (UCI Online Retail)
 ```
 Online-Retail-Analysis/
 │
-├── Notebooks/
-│   ├── EDA.ipynb                   # Exploratory Data Analysis & Cleaning
-│   ├── Supervised.ipynb            # CLV Prediction Model Training
-│   └── Unsupervised.ipynb          # Customer Segmentation (KMeans)
+├── notebooks/
+│   ├── 01_EDA.ipynb                        # Data exploration, cleaning & feature engineering
+│   ├── 02_Supervised_Model.ipynb           # CLV regression model training & evaluation
+│   └── 03_Unsupervised_Segmentation.ipynb  # KMeans customer segmentation
 │
-├── app.py                          # Streamlit Dashboard Application
-├── supervised_model.pkl            # Trained & Serialized ML Model
-├── requirements.txt                # Python Dependencies
+├── app/
+│   └── app.py                              # Streamlit dashboard application
+│
+├── models/
+│   └── supervised_model.pkl                # Trained & serialized ML model
+│
+├── data/
+│   └── README.md                           # Dataset info & download instructions
+│
+├── assets/                                 # Screenshots & demo images
+├── requirements.txt                        # Python dependencies
+├── .gitignore
 └── README.md
 ```
 
-> **Note:** `final_customer_data.csv` is not included due to size. Generate it by running `EDA.ipynb` first, or download the original dataset from [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/online+retail).
+> **Note:** Raw data files (`*.csv`, `*.xlsx`) are excluded from version control.  
+> Run `notebooks/01_EDA.ipynb` to generate `data/final_customer_data.csv`, or see [`data/README.md`](data/README.md) for download instructions.
 
 ---
 

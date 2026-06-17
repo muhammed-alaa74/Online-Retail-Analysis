@@ -1,17 +1,17 @@
 # Data files (too large for GitHub)
-*.csv
-data/
-
-# Jupyter checkpoints
-.ipynb_checkpoints/
-**/.ipynb_checkpoints/
+data/*.csv
+data/*.xlsx
+data/*.xls
 
 # Python cache
 __pycache__/
 *.pyc
 *.pyo
-*.pyd
 .Python
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
 # Virtual environments
 venv/
